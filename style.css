@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box ;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-box {
+    background-image : url("ok.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.menu {
+    height:100vh;
+    width: 300px;
+    position: fixed;
+    left: -300px;
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    color:white;
+    transition :0.5s;
+}
+.menu1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:flex;
+    font-size: 2em;
+    gap:1.5rem;  
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.5);
+}
+
+.icon1{
+    cursor: pointer;
+    padding-left: 10px;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+    margin-top: 10px;
+}
+.icon1 i {
+    cursor: pointer;
+    opacity: 1;
+}
+.Codding {
+    cursor:default;
+    margin-left: 10px;
+}
+.close {
+    margin-top: 10px;
+    margin-left: 29px;
+}
+    
+.close label i{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close i{
+    cursor: pointer;
+    opacity: 1;
+
+    font-size: 1rem;
+
+}
+
+.menu2 {
+    margin-top: 10px;
+}
+.menu2 li {
+    list-style: none;
+}
+.menu2 li:hover {
+    border-top:1px solid rgb(245, 235, 235, 0.774);
+    border-bottom:1px solid rgba(245, 235, 235, 0.774);
+}
+.menu2 ul {
+    display: flex;
+    flex-direction: column;
+    margin-top:50px;
+    gap:8px;
+}
+.menu2 ul li{
+    font-size: 1.5rem;
+    display: flex;
+    align-items:center;
+    gap:7px;
+    height: 50px;
+    padding:0px 0px 0px 20px;
+}
+.menu2 li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.menu3 {
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+.menu3 i {
+    cursor: pointer;
+}
+.menu3 a {
+    text-decoration: none;
+    color: white;
+}
+#check {
+    display: none;
+}
+#check:checked ~ .menu{
+    left:0px;
+}
+#check:checked ~ .icon1 i{
+    opacity: 0;  
+
+}
